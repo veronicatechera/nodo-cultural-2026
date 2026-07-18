@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodo Cultural | Conectando cultura y comunidad</title>
+    <meta name="description" content="Plataforma nacional de difusión cultural. Centralizamos y difundimos la oferta cultural de museos e instituciones patrimoniales de Uruguay.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+    <header class="header">
+        <nav class="navbar contenedor" aria-label="Navegación principal">
+
+            <a href="index.html" class="navbar__logo">
+                <img src="assets/imagenes/logo-nodo-cultural.png" alt="Nodo Cultural - Inicio" width="180" height="50">
+            </a>
+
+            <button class="navbar__toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="navbar__toggle-icon"></span>
+            </button>
+
+            <ul class="navbar__menu">
+                <li><a href="index.html" class="navbar__link navbar__link--activo" aria-current="page">Inicio</a></li>
+                <li><a href="catalogo.html" class="navbar__link">Actividades</a></li>
+                <li><a href="agenda.html" class="navbar__link">Agenda</a></li>
+                <li><a href="museos.html" class="navbar__link">Instituciones</a></li>
+                <li><a href="cursos.html" class="navbar__link">Cursos</a></li>
+                <li><a href="recursos.html" class="navbar__link">Recursos</a></li>
+                <li><a href="instituciones-educativas.html" class="navbar__link">Para docentes</a></li>
+                <li><a href="contacto.html" class="navbar__link">Contacto</a></li>
+            </ul>
+
+            <div class="navbar__sesion">
+                <a href="login.html" class="btn btn--outline btn--sm">Iniciar sesión</a>
+                <a href="registro.html" class="btn btn--primario btn--sm">Registrarse</a>
+            </div>
+        </nav>
+
+<main id="contenido-principal">
+    <section class="hero">
+        <div class="hero__contenido contenedor">
+            <div class="hero__texto">
+                <h1 class="hero__titulo">
+                    Descubrí la cultura<br>
+                    <span class="hero__titulo--destacado">de Uruguay</span>
+                </h1>
+                <p class="hero__descripcion">
+                    Plataforma nacional de difusión cultural. Conectamos museos, 
+                    instituciones patrimoniales y comunidad en un solo espacio.
+                </p>
+                <div class="hero__acciones">
+                    <a href="catalogo.html" class="btn btn--primario btn--grande">
+                        <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                        Explorar actividades
+                    </a>
+                    <a href="registro.html" class="btn btn--secundario btn--grande">
+                        <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
+                        Crear cuenta gratis
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-numero">150+</span>
+                        <span class="hero__stat-texto">Actividades mensuales</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-numero">45+</span>
+                        <span class="hero__stat-texto">Instituciones</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-numero">19</span>
+                        <span class="hero__stat-texto">Departamentos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__imagen">
+                <img src="assets/imagenes/hero-cultural.jpg" alt="Personas recorriendo una exposición cultural" width="600" height="450" loading="eager">
+            </div>
+        </div>
+    </section>
+    <section class="buscador-rapido" aria-label="Buscador principal">
+        <div class="buscador-rapido__contenido contenedor">
+            <h2 class="buscador-rapido__titulo">¿Qué querés descubrir hoy?</h2>
+            <form class="buscador-rapido__form" role="search" action="catalogo.html" method="get">
+                <div class="buscador-rapido__input-group">
+                    <i class="fa-solid fa-magnifying-glass buscador-rapido__icono" aria-hidden="true"></i>
+                    <input 
+                        type="search" 
+                        name="q" 
+                        class="buscador-rapido__input"
+                        placeholder="Ej: taller de cerámica, exposición de arte, museo en Colonia..." 
+                        aria-label="Buscar actividades, museos o recursos"
+                    >
+                    <button type="submit" class="btn btn--primario buscador-rapido__boton">
+                        Buscar
+                    </button>
+                </div>
+                <div class="buscador-rapido__sugerencias">
+                    <span>Popular:</span>
+                    <a href="catalogo.html?q=exposicion">Exposiciones</a>
+                    <a href="catalogo.html?q=taller">Talleres</a>
+                    <a href="catalogo.html?q=infantil">Para niños</a>
+                    <a href="catalogo.html?q=fin+de+semana">Este finde</a>
+                </div>
+            </form>
+        </div>
+    </section>
+<section class="destacados contenedor">
+    <div class="seccion-header">
+        <div class="seccion-header__texto">
+            <span class="seccion-header__etiqueta">No te lo pierdas</span>
+            <h2 class="seccion-header__titulo">Actividades destacadas</h2>
+            <p class="seccion-header__descripcion">Las actividades más relevantes del mes seleccionadas por nuestro equipo curatorial.</p>
+        </div>
+        <a href="catalogo.html" class="seccion-header__link">
+            Ver todas las actividades
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="cards-grid">
+        <article class="card card--actividad">
+            <div class="card__imagen">
+                <img src="assets/imagenes/actividad1.jpg" alt="Obra de arte contemporáneo uruguayo" loading="lazy">
+                <span class="card__categoria">Exposición</span>
+                <button class="card__favorito" aria-label="Guardar en favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            <div class="card__cuerpo">
+                <div class="card__tags">
+                    <span class="card__tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> MNAV</span>
+                    <span class="card__tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo</span>
+                </div>
+                <h3 class="card__titulo">Arte contemporáneo uruguayo 2026</h3>
+                <p class="card__fecha">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                    15 Jul — 30 Ago 2026
+                </p>
+                <p class="card__descripcion">Una selección de obras de artistas uruguayos contemporáneos que exploran la identidad nacional.</p>
+                <div class="card__footer">
+                    <span class="card__edad">Todo público</span>
+                    <a href="actividad.html" class="btn btn--outline btn--sm">
+                        Ver actividad
+                        <span class="sr-only">Arte contemporáneo uruguayo 2026</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="card card--actividad">
+            <div class="card__imagen">
+                <img src="assets/imagenes/actividad2.jpg" alt="Personas en un taller de fotografía" loading="lazy">
+                <span class="card__categoria card__categoria--taller">Taller</span>
+                <button class="card__favorito" aria-label="Guardar en favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            <div class="card__cuerpo">
+                <div class="card__tags">
+                    <span class="card__tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> CdF</span>
+                    <span class="card__tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo</span>
+                </div>
+                <h3 class="card__titulo">Taller de fotografía documental</h3>
+                <p class="card__fecha">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                    Sábados de agosto · 10:00 a 13:00
+                </p>
+                <p class="card__descripcion">Aprendé técnicas de fotografía documental aplicadas al registro del patrimonio cultural.</p>
+                <div class="card__footer">
+                    <span class="card__edad">+16 años</span>
+                    <a href="actividad.html" class="btn btn--outline btn--sm">
+                        Ver actividad
+                        <span class="sr-only">Taller de fotografía documental</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="card card--actividad">
+            <div class="card__imagen">
+                <img src="assets/imagenes/actividad3.jpg" alt="Charla sobre patrimonio industrial en museo" loading="lazy">
+                <span class="card__categoria card__categoria--charla">Charla</span>
+                <button class="card__favorito" aria-label="Guardar en favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+            </div>
+            <div class="card__cuerpo">
+                <div class="card__tags">
+                    <span class="card__tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> MHN</span>
+                    <span class="card__tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Colonia</span>
+                </div>
+                <h3 class="card__titulo">Patrimonio industrial: memoria y futuro</h3>
+                <p class="card__fecha">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                    22 Julio 2026 · 18:00
+                </p>
+                <p class="card__descripcion">Charla abierta sobre la importancia del patrimonio industrial en la identidad cultural uruguaya.</p>
+                <div class="card__footer">
+                    <span class="card__edad">Todo público</span>
+                    <a href="actividad.html" class="btn btn--outline btn--sm">
+                        Ver actividad
+                        <span class="sr-only">Patrimonio industrial: memoria y futuro</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+<section class="proximas contenedor">
+    <div class="seccion-header">
+        <div class="seccion-header__texto">
+            <span class="seccion-header__etiqueta">Agenda Cultural</span>
+            <h2 class="seccion-header__titulo">Próximas actividades</h2>
+            <p class="seccion-header__descripcion">Lo que viene esta semana y la próxima. Planificá tu agenda cultural.</p>
+        </div>
+        <a href="agenda.html" class="seccion-header__link">
+            Ver agenda completa
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="proximas__lista">
+        <div class="actividad-mini">
+            <div class="actividad-mini__fecha">
+                <span class="actividad-mini__dia">15</span>
+                <span class="actividad-mini__mes">JUL</span>
+            </div>
+            <div class="actividad-mini__info">
+                <h3 class="actividad-mini__titulo">Exposición Sudamtex</h3>
+                <p class="actividad-mini__institucion">Museo Nacional de Artes Visuales</p>
+                <p class="actividad-mini__detalle">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i> 10:00 - 18:00
+                    <span class="actividad-mini__separador">·</span>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo
+                </p>
+            </div>
+            <a href="actividad.html" class="btn btn--outline btn--sm">+ Info</a>
+        </div>
+        <div class="actividad-mini">
+            <div class="actividad-mini__fecha">
+                <span class="actividad-mini__dia">18</span>
+                <span class="actividad-mini__mes">JUL</span>
+            </div>
+            <div class="actividad-mini__info">
+                <h3 class="actividad-mini__titulo">Taller de Museología</h3>
+                <p class="actividad-mini__institucion">Museo Histórico Nacional</p>
+                <p class="actividad-mini__detalle">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i> 14:00 - 17:00
+                    <span class="actividad-mini__separador">·</span>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo
+                </p>
+            </div>
+            <a href="actividad.html" class="btn btn--outline btn--sm">+ Info</a>
+        </div>
+        <div class="actividad-mini">
+            <div class="actividad-mini__fecha">
+                <span class="actividad-mini__dia">22</span>
+                <span class="actividad-mini__mes">JUL</span>
+            </div>
+            <div class="actividad-mini__info">
+                <h3 class="actividad-mini__titulo">Charla Patrimonio Industrial</h3>
+                <p class="actividad-mini__institucion">Museo de la Revolución Industrial</p>
+                <p class="actividad-mini__detalle">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i> 18:00
+                    <span class="actividad-mini__separador">·</span>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Colonia
+                </p>
+            </div>
+            <a href="actividad.html" class="btn btn--outline btn--sm">+ Info</a>
+        </div>
+        <div class="actividad-mini">
+            <div class="actividad-mini__fecha">
+                <span class="actividad-mini__dia">30</span>
+                <span class="actividad-mini__mes">JUL</span>
+            </div>
+            <div class="actividad-mini__info">
+                <h3 class="actividad-mini__titulo">Exploradores del museo</h3>
+                <p class="actividad-mini__institucion">Museo de Historia Natural</p>
+                <p class="actividad-mini__detalle">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i> 10:00
+                    <span class="actividad-mini__separador">·</span>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo
+                    <span class="actividad-mini__separador">·</span>
+                    <i class="fa-solid fa-child" aria-hidden="true"></i> 6 a 12 años
+                </p>
+            </div>
+            <a href="actividad.html" class="btn btn--outline btn--sm">+ Info</a>
+        </div>
+
+    </div>
+</section>
+<section class="instituciones-destacadas contenedor">
+    <div class="seccion-header">
+        <div class="seccion-header__texto">
+            <span class="seccion-header__etiqueta">Espacios culturales</span>
+            <h2 class="seccion-header__titulo">Instituciones destacadas</h2>
+            <p class="seccion-header__descripcion">Museos, archivos, bibliotecas y centros culturales que forman parte de Nodo Cultural.</p>
+        </div>
+        <a href="museos.html" class="seccion-header__link">
+            Ver todas las instituciones
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="cards-grid cards-grid--4">
+        <article class="card card--institucion">
+            <div class="card__imagen">
+                <img src="assets/imagenes/institucion1.jpg" alt="Fachada del Museo Nacional de Artes Visuales" loading="lazy">
+                <span class="card__tipo-institucion">Museo</span>
+            </div>
+            <div class="card__cuerpo">
+                <h3 class="card__titulo">Museo Nacional de Artes Visuales</h3>
+                <p class="card__ubicacion">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                    Parque Rodó, Montevideo
+                </p>
+                <p class="card__descripcion">Principal museo de artes visuales del país con una colección de más de 7000 obras.</p>
+                <a href="museo.html" class="btn btn--outline btn--sm btn--full">Conocer más</a>
+            </div>
+        </article>
+        <article class="card card--institucion">
+            <div class="card__imagen">
+                <img src="assets/imagenes/institucion2.jpg" alt="Interior del Centro de Fotografía de Montevideo" loading="lazy">
+                <span class="card__tipo-institucion card__tipo-institucion--archivo">Archivo</span>
+            </div>
+            <div class="card__cuerpo">
+                <h3 class="card__titulo">Centro de Fotografía</h3>
+                <p class="card__ubicacion">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                    Ciudad Vieja, Montevideo
+                </p>
+                <p class="card__descripcion">Archivo fotográfico nacional con más de 200.000 imágenes históricas y contemporáneas.</p>
+                <a href="museo.html" class="btn btn--outline btn--sm btn--full">Conocer más</a>
+            </div>
+        </article>
+        <article class="card card--institucion">
+            <div class="card__imagen">
+                <img src="assets/imagenes/institucion3.jpg" alt="Biblioteca Nacional de Uruguay" loading="lazy">
+                <span class="card__tipo-institucion card__tipo-institucion--biblioteca">Biblioteca</span>
+            </div>
+            <div class="card__cuerpo">
+                <h3 class="card__titulo">Biblioteca Nacional</h3>
+                <p class="card__ubicacion">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                    Centro, Montevideo
+                </p>
+                <p class="card__descripcion">Custodia del patrimonio bibliográfico nacional con salas de lectura y exposiciones temporales.</p>
+                <a href="museo.html" class="btn btn--outline btn--sm btn--full">Conocer más</a>
+            </div>
+        </article>
+        <article class="card card--institucion">
+            <div class="card__imagen">
+                <img src="assets/imagenes/institucion4.jpg" alt="Centro Cultural de Colonia del Sacramento" loading="lazy">
+                <span class="card__tipo-institucion card__tipo-institucion--centro">Centro Cultural</span>
+            </div>
+            <div class="card__cuerpo">
+                <h3 class="card__titulo">Centro Cultural Colonia</h3>
+                <p class="card__ubicacion">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                    Colonia del Sacramento
+                </p>
+                <p class="card__descripcion">Espacio multidisciplinario con talleres, exposiciones y actividades para toda la comunidad.</p>
+                <a href="museo.html" class="btn btn--outline btn--sm btn--full">Conocer más</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+    </header>
