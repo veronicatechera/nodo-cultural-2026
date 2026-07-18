@@ -575,5 +575,132 @@
                 </div>
             </div>
         </section>
-        
-                    </header>
+<section class="asistente contenedor">
+    <div class="asistente__contenido">
+        <div class="asistente__encabezado">
+            <span class="asistente__icono">
+                <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            </span>
+            <h2 class="asistente__titulo">Asistente Cultural</h2>
+            <p class="asistente__descripcion">
+                Consultale al asistente sobre actividades, museos, recursos educativos o planificación de visitas. 
+                Cuanto más específica sea tu pregunta, mejores recomendaciones recibirás.
+            </p>
+        </div>
+        <div class="asistente__sugerencias">
+            <span>Probá preguntarle:</span>
+            <button class="asistente__sugerencia" data-consulta="Quiero visitar un museo con niños este fin de semana">
+                "Quiero visitar un museo con niños este fin de semana"
+            </button>
+            <button class="asistente__sugerencia" data-consulta="Estoy preparando una clase sobre patrimonio industrial. ¿Qué recursos tienen?">
+                "Estoy preparando una clase sobre patrimonio industrial"
+            </button>
+            <button class="asistente__sugerencia" data-consulta="¿Qué actividades hay este fin de semana en Colonia?">
+                "¿Qué actividades hay este fin de semana en Colonia?"
+            </button>
+            <button class="asistente__sugerencia" data-consulta="Recomendame una exposición de arte contemporáneo en Montevideo">
+                "Recomendame una exposición de arte contemporáneo"
+            </button>
+        </div>
+        <div class="asistente__chat">
+            <div class="asistente__mensajes" aria-live="polite" aria-label="Conversación con el Asistente Cultural">
+                <div class="asistente__mensaje asistente__mensaje--bot">
+                    <div class="asistente__avatar">
+                        <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    </div>
+                    <div class="asistente__burbuja">
+                        <p>¡Hola! Soy el Asistente Cultural de Nodo Cultural. Puedo recomendarte actividades, museos, recursos educativos y ayudarte a planificar visitas. ¿En qué puedo ayudarte hoy?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="asistente__input-area">
+                <input 
+                    type="text" 
+                    placeholder="Escribí tu consulta cultural..." 
+                    aria-label="Escribí tu consulta al Asistente Cultural"
+                    class="asistente__input"
+                >
+                <button type="submit" class="btn btn--primario asistente__enviar" aria-label="Enviar consulta">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+</header>
+</main>
+    <footer class="footer">
+        <div class="footer__contenido contenedor">
+            <div class="footer__columna footer__columna--principal">
+                <img src="assets/imagenes/logo-nodo-cultural-blanco.png" alt="Nodo Cultural" width="160" height="45" loading="lazy">
+                <p class="footer__descripcion">
+                    Plataforma nacional de difusión cultural que centraliza y difunde la oferta cultural 
+                    de museos e instituciones patrimoniales de Uruguay.
+                </p>
+                <div class="footer__redes">
+                    <a href="#" aria-label="Instagram de Nodo Cultural"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter de Nodo Cultural"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Facebook de Nodo Cultural"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube de Nodo Cultural"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer__columna">
+                <h3 class="footer__titulo-columna">Explorar</h3>
+                <ul class="footer__links">
+                    <li><a href="catalogo.html">Actividades</a></li>
+                    <li><a href="agenda.html">Agenda Cultural</a></li>
+                    <li><a href="museos.html">Instituciones</a></li>
+                    <li><a href="cursos.html">Cursos y talleres</a></li>
+                    <li><a href="recursos.html">Recursos educativos</a></li>
+                    <li><a href="boletin.html">Boletín Cultural</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h3 class="footer__titulo-columna">Para docentes</h3>
+                <ul class="footer__links">
+                    <li><a href="instituciones-educativas.html">Recursos para el aula</a></li>
+                    <li><a href="instituciones-educativas.html#planificar">Planificá tu visita</a></li>
+                    <li><a href="recursos.html?tipo=secuencia">Secuencias didácticas</a></li>
+                    <li><a href="recursos.html?tipo=audioguia">Audioguías</a></li>
+                    <li><a href="recursos.html?tipo=video">Videos educativos</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h3 class="footer__titulo-columna">Contacto</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i> 
+                            Formulario de contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@nodocultural.uy">
+                            <i class="fa-regular fa-at" aria-hidden="true"></i> 
+                            info@nodocultural.uy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin/dashboard.html">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> 
+                            Acceso administrador
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__legal">
+            <div class="footer__legal-contenido contenedor">
+                <p>&copy; 2026 Nodo Cultural. Todos los derechos reservados.</p>
+                <div class="footer__legal-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Accesibilidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
