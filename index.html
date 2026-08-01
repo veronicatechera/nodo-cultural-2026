@@ -406,98 +406,121 @@
                 </li>
             </ul>
         </section>
-        <section class="cursos-home" aria-labelledby="cursos-titulo">
-            <div class="cursos-home__contenido contenedor">
-                <header class="seccion-header">
-                    <div class="seccion-header__texto">
-                        <span class="seccion-header__etiqueta">Aprendé y creá</span>
-                        <h2 id="cursos-titulo" class="seccion-header__titulo">Cursos y talleres</h2>
-                        <p class="seccion-header__descripcion">Formación cultural con expertos. Talleres prácticos, cursos teóricos y experiencias inmersivas.</p>
-                    </div>
-                    <a href="cursos.html" class="seccion-header__link">
-                        Ver todos los cursos
-                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </header>
-
-                <ul class="cards-grid cards-grid--3">
-                    <li>
-                        <article class="card card--curso" aria-labelledby="curso1-titulo">
-                            <figure class="card__imagen">
-                                <img src="assets/imagenes/curso1.jpg" alt="Persona restaurando una obra de arte" loading="lazy">
-                                <figcaption class="sr-only">Conservación y restauración de obras</figcaption>
-                                <span class="card__modalidad">Presencial</span>
-                            </figure>
-                            <div class="card__cuerpo">
-                                <span class="card__institucion-curso">Museo Nacional de Artes Visuales</span>
-                                <h3 id="curso1-titulo" class="card__titulo">Conservación y restauración de obras</h3>
-                                <p class="card__fecha">
-                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
-                                    Inicia 5 de agosto · 8 clases
-                                </p>
-                                <footer class="card__footer">
-                                    <span class="card__cupos">
-                                        <i class="fa-solid fa-users" aria-hidden="true"></i> 
-                                        12 cupos disponibles
-                                    </span>
-                                    <span class="card__precio">Gratuito</span>
-                                </footer>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article class="card card--curso" aria-labelledby="curso2-titulo">
-                            <figure class="card__imagen">
-                                <img src="assets/imagenes/curso2.jpg" alt="Taller de cerámica con estudiantes" loading="lazy">
-                                <figcaption class="sr-only">Taller de cerámica precolombina</figcaption>
-                                <span class="card__modalidad card__modalidad--virtual">Virtual</span>
-                            </figure>
-                            <div class="card__cuerpo">
-                                <span class="card__institucion-curso">Centro Cultural Colonia</span>
-                                <h3 id="curso2-titulo" class="card__titulo">Cerámica precolombina: historia y técnica</h3>
-                                <p class="card__fecha">
-                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
-                                    Inicia 12 de agosto · 6 clases
-                                </p>
-                                <footer class="card__footer">
-                                    <span class="card__cupos">
-                                        <i class="fa-solid fa-users" aria-hidden="true"></i> 
-                                        20 cupos disponibles
-                                    </span>
-                                    <span class="card__precio">$1.200</span>
-                                </footer>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li>
-                        <article class="card card--curso" aria-labelledby="curso3-titulo">
-                            <figure class="card__imagen">
-                                <img src="assets/imagenes/curso3.jpg" alt="Charla sobre gestión cultural" loading="lazy">
-                                <figcaption class="sr-only">Gestión cultural y patrimonio</figcaption>
-                                <span class="card__modalidad">Presencial</span>
-                            </figure>
-                            <div class="card__cuerpo">
-                                <span class="card__institucion-curso">Museo Histórico Nacional</span>
-                                <h3 id="curso3-titulo" class="card__titulo">Gestión cultural y patrimonio</h3>
-                                <p class="card__fecha">
-                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
-                                    Inicia 20 de agosto · 4 clases
-                                </p>
-                                <footer class="card__footer">
-                                    <span class="card__cupos">
-                                        <i class="fa-solid fa-users" aria-hidden="true"></i> 
-                                        25 cupos disponibles
-                                    </span>
-                                    <span class="card__precio">Gratuito</span>
-                                </footer>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+       <!-- ===== CURSOS Y TALLERES ===== -->
+<section class="cursos-home" aria-labelledby="cursos-titulo">
+    <div class="cursos-home__contenido contenedor">
+        <header class="seccion-header">
+            <div class="seccion-header__texto">
+                <span class="seccion-header__etiqueta">Aprendé y creá</span>
+                <h2 id="cursos-titulo" class="seccion-header__titulo">Cursos y talleres</h2>
+                <p class="seccion-header__descripcion">Formación cultural con expertos. Talleres prácticos, cursos teóricos y experiencias inmersivas.</p>
             </div>
-        </section>
+            <a href="cursos.html" class="seccion-header__link">
+                Ver todos los cursos
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </header>
+
+        <ul class="cards-grid cards-grid--3">
+            <!-- Curso 1 -->
+            <li>
+                <article class="card card--curso" aria-labelledby="curso1-titulo" data-curso-id="curso-1">
+                    <figure class="card__imagen">
+                        <img src="assets/imagenes/curso1.jpg" alt="Persona restaurando una obra de arte" loading="lazy">
+                        <figcaption class="sr-only">Conservación y restauración de obras</figcaption>
+                        <span class="card__modalidad">Presencial</span>
+                    </figure>
+                    <div class="card__cuerpo">
+                        <span class="card__institucion-curso">Museo Nacional de Artes Visuales</span>
+                        <h3 id="curso1-titulo" class="card__titulo">Conservación y restauración de obras</h3>
+                        <p class="card__fecha">
+                            <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                            Inicia 5 de agosto · 8 clases
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__cupos" id="cupos-curso-1">
+                                <i class="fa-solid fa-users" aria-hidden="true"></i> 
+                                <span class="cupos-disponibles" data-curso="curso-1">12</span> cupos disponibles
+                            </span>
+                            <span class="card__precio">Gratuito</span>
+                        </div>
+                        <!-- Botón de inscripción -->
+                        <div class="card__inscripcion" style="margin-top: var(--espacio-sm);">
+                            <button class="btn btn--primario btn--full btn-inscribir" data-curso="curso-1" data-cupos="12">
+                                <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Inscribirme
+                            </button>
+                            <p class="card__mensaje-inscripcion" id="mensaje-curso-1" style="font-size: var(--texto-sm); margin-top: var(--espacio-xs); display: none;"></p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+
+            <!-- Curso 2 -->
+            <li>
+                <article class="card card--curso" aria-labelledby="curso2-titulo" data-curso-id="curso-2">
+                    <figure class="card__imagen">
+                        <img src="assets/imagenes/curso2.jpg" alt="Taller de cerámica con estudiantes" loading="lazy">
+                        <figcaption class="sr-only">Taller de cerámica precolombina</figcaption>
+                        <span class="card__modalidad card__modalidad--virtual">Virtual</span>
+                    </figure>
+                    <div class="card__cuerpo">
+                        <span class="card__institucion-curso">Centro Cultural Colonia</span>
+                        <h3 id="curso2-titulo" class="card__titulo">Cerámica precolombina: historia y técnica</h3>
+                        <p class="card__fecha">
+                            <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                            Inicia 12 de agosto · 6 clases
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__cupos" id="cupos-curso-2">
+                                <i class="fa-solid fa-users" aria-hidden="true"></i> 
+                                <span class="cupos-disponibles" data-curso="curso-2">20</span> cupos disponibles
+                            </span>
+                            <span class="card__precio">$1.200</span>
+                        </div>
+                        <div class="card__inscripcion" style="margin-top: var(--espacio-sm);">
+                            <button class="btn btn--primario btn--full btn-inscribir" data-curso="curso-2" data-cupos="20">
+                                <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Inscribirme
+                            </button>
+                            <p class="card__mensaje-inscripcion" id="mensaje-curso-2" style="font-size: var(--texto-sm); margin-top: var(--espacio-xs); display: none;"></p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+
+            <!-- Curso 3 -->
+            <li>
+                <article class="card card--curso" aria-labelledby="curso3-titulo" data-curso-id="curso-3">
+                    <figure class="card__imagen">
+                        <img src="assets/imagenes/curso3.jpg" alt="Charla sobre gestión cultural" loading="lazy">
+                        <figcaption class="sr-only">Gestión cultural y patrimonio</figcaption>
+                        <span class="card__modalidad">Presencial</span>
+                    </figure>
+                    <div class="card__cuerpo">
+                        <span class="card__institucion-curso">Museo Histórico Nacional</span>
+                        <h3 id="curso3-titulo" class="card__titulo">Gestión cultural y patrimonio</h3>
+                        <p class="card__fecha">
+                            <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                            Inicia 20 de agosto · 4 clases
+                        </p>
+                        <div class="card__footer">
+                            <span class="card__cupos" id="cupos-curso-3">
+                                <i class="fa-solid fa-users" aria-hidden="true"></i> 
+                                <span class="cupos-disponibles" data-curso="curso-3">25</span> cupos disponibles
+                            </span>
+                            <span class="card__precio">Gratuito</span>
+                        </div>
+                        <div class="card__inscripcion" style="margin-top: var(--espacio-sm);">
+                            <button class="btn btn--primario btn--full btn-inscribir" data-curso="curso-3" data-cupos="25">
+                                <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Inscribirme
+                            </button>
+                            <p class="card__mensaje-inscripcion" id="mensaje-curso-3" style="font-size: var(--texto-sm); margin-top: var(--espacio-xs); display: none;"></p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </div>
+</section>
         <section class="recursos-home contenedor" aria-labelledby="recursos-titulo">
             <header class="seccion-header">
                 <div class="seccion-header__texto">
@@ -767,7 +790,7 @@
             </div>
         </div>
     </footer>
-
+<script src="js/calculos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
