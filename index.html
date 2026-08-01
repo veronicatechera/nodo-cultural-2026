@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodo Cultural | Conectando cultura y comunidad</title>
+    <meta name="description" content="Plataforma nacional de difusión cultural. Centralizamos y difundimos la oferta cultural de museos e instituciones patrimoniales de Uruguay.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+<body>
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+    <header class="header" role="banner">
+        <nav class="navbar contenedor" aria-label="Navegación principal">
+            <a href="index.html" class="navbar__logo" aria-label="Nodo Cultural - Inicio">
+                <img src="assets/imagenes/logo-nodo-cultural.png" alt="Nodo Cultural" width="180" height="50">
+            </a>
+
+            <button class="navbar__toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="navbar__toggle-icon"></span>
+            </button>
+
+            <ul class="navbar__menu" role="menubar">
+                <li role="none"><a href="index.html" class="navbar__link navbar__link--activo" aria-current="page" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="catalogo.html" class="navbar__link" role="menuitem">Actividades</a></li>
+                <li role="none"><a href="agenda.html" class="navbar__link" role="menuitem">Agenda</a></li>
+                <li role="none"><a href="museos.html" class="navbar__link" role="menuitem">Instituciones</a></li>
+                <li role="none"><a href="cursos.html" class="navbar__link" role="menuitem">Cursos</a></li>
+                <li role="none"><a href="recursos.html" class="navbar__link" role="menuitem">Recursos</a></li>
+                <li role="none"><a href="instituciones-educativas.html" class="navbar__link" role="menuitem">Para docentes</a></li>
+                <li role="none"><a href="contacto.html" class="navbar__link" role="menuitem">Contacto</a></li>
+            </ul>
+
+            <div class="navbar__sesion">
+                <a href="login.html" class="btn btn--outline btn--sm">Iniciar sesión</a>
+                <a href="registro.html" class="btn btn--primario btn--sm">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido-principal" role="main">
+
+        <section class="hero" aria-labelledby="hero-titulo">
+            <div class="hero__contenido contenedor">
+                <div class="hero__texto">
+                    <h1 id="hero-titulo" class="hero__titulo">
+                        Descubrí la cultura<br>
+                        <span class="hero__titulo--destacado">de Uruguay</span>
+                    </h1>
+                    <p class="hero__descripcion">
+                        Plataforma nacional de difusión cultural. Conectamos museos, 
+                        instituciones patrimoniales y comunidad en un solo espacio.
+                    </p>
+                    <div class="hero__acciones">
+                        <a href="catalogo.html" class="btn btn--primario btn--grande">
+                            <i class="fa-solid fa-compass" aria-hidden="true"></i>
+                            Explorar actividades
+                        </a>
+                        <a href="registro.html" class="btn btn--secundario btn--grande">
+                            <i class="fa-solid fa-user-plus" aria-hidden="true"></i>
+                            Crear cuenta gratis
+                        </a>
+                    </div>
+
+                    <ul class="hero__stats" aria-label="Estadísticas de la plataforma">
+                        <li class="hero__stat">
+                            <span class="hero__stat-numero">150+</span>
+                            <span class="hero__stat-texto">Actividades mensuales</span>
+                        </li>
+                        <li class="hero__stat">
+                            <span class="hero__stat-numero">45+</span>
+                            <span class="hero__stat-texto">Instituciones</span>
+                        </li>
+                        <li class="hero__stat">
+                            <span class="hero__stat-numero">19</span>
+                            <span class="hero__stat-texto">Departamentos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <figure class="hero__imagen">
+                    <img src="imagenes/exposicion-indigenas-de-uruguay-personas-apreciando-obras.jpg" alt="Personas recorriendo una exposición cultural" width="600" height="450" loading="eager">
+                    <figcaption>Visitantes disfrutando de una exposición cultural en Uruguay</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="buscador-rapido" aria-labelledby="buscador-titulo">
+            <div class="buscador-rapido__contenido contenedor">
+                <h2 id="buscador-titulo" class="buscador-rapido__titulo">¿Qué querés descubrir hoy?</h2>
+                <form class="buscador-rapido__form" role="search" action="catalogo.html" method="get">
+                    <fieldset>
+                        <legend class="sr-only">Buscador de actividades culturales</legend>
+                        <div class="buscador-rapido__input-group">
+                            <i class="fa-solid fa-magnifying-glass buscador-rapido__icono" aria-hidden="true"></i>
+                            <input 
+                                type="search" 
+                                name="q" 
+                                class="buscador-rapido__input"
+                                placeholder="Ej: taller de cerámica, exposición de arte, museo en Colonia..." 
+                                aria-label="Buscar actividades, museos o recursos"
+                            >
+                            <button type="submit" class="btn btn--primario buscador-rapido__boton">
+                                Buscar
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <aside class="buscador-rapido__sugerencias" aria-label="Búsquedas populares">
+                    <span>Popular:</span>
+                    <ul>
+                        <li><a href="catalogo.html?q=exposicion">Exposiciones</a></li>
+                        <li><a href="catalogo.html?q=taller">Talleres</a></li>
+                        <li><a href="catalogo.html?q=infantil">Para niños</a></li>
+                        <li><a href="catalogo.html?q=fin+de+semana">Este finde</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="destacados contenedor" aria-labelledby="destacados-titulo">
+            <header class="seccion-header">
+                <div class="seccion-header__texto">
+                    <span class="seccion-header__etiqueta">No te lo pierdas</span>
+                    <h2 id="destacados-titulo" class="seccion-header__titulo">Actividades destacadas</h2>
+                    <p class="seccion-header__descripcion">Las actividades más relevantes del mes seleccionadas por nuestro equipo curatorial.</p>
+                </div>
+                <a href="catalogo.html" class="seccion-header__link">
+                    Ver todas las actividades
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </header>
+
+            <ul class="cards-grid">
+                <li>
+                    <article class="card card--actividad" aria-labelledby="actividad1-titulo">
+                        <figure class="card__imagen">
+                            <img src="imagenes/Artecontemporaneouruguayo2026.jpg" alt="Obra de arte contemporáneo uruguayo" loading="lazy">
+                            <figcaption class="sr-only">Obra de arte contemporáneo uruguayo</figcaption>
+                            <span class="card__categoria">Exposición</span>
+                            <button class="card__favorito" aria-label="Guardar en favoritos">
+                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <ul class="card__tags">
+                                <li class="card__tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> MNAV</li>
+                                <li class="card__tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo</li>
+                            </ul>
+                            <h3 id="actividad1-titulo" class="card__titulo">Arte contemporáneo uruguayo 2026</h3>
+                            <p class="card__fecha">
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                                15 Jul — 30 Ago 2026
+                            </p>
+                            <p class="card__descripcion">Una selección de obras de artistas uruguayos contemporáneos que exploran la identidad nacional.</p>
+                            <footer class="card__footer">
+                                <span class="card__edad">Todo público</span>
+                                <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Ver actividad: Arte contemporáneo uruguayo 2026">
+                                    Ver actividad
+                                </a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card card--actividad" aria-labelledby="actividad2-titulo">
+                        <figure class="card__imagen">
+                            <img src="imagenes/fotografia.jpg" alt="Personas en un taller de fotografía" loading="lazy">
+                            <figcaption class="sr-only">Taller de fotografía documental</figcaption>
+                            <span class="card__categoria card__categoria--taller">Taller</span>
+                            <button class="card__favorito" aria-label="Guardar en favoritos">
+                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <ul class="card__tags">
+                                <li class="card__tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> CdF</li>
+                                <li class="card__tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo</li>
+                            </ul>
+                            <h3 id="actividad2-titulo" class="card__titulo">Taller de fotografía documental</h3>
+                            <p class="card__fecha">
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                                Sábados de agosto · 10:00 a 13:00
+                            </p>
+                            <p class="card__descripcion">Aprendé técnicas de fotografía documental aplicadas al registro del patrimonio cultural.</p>
+                            <footer class="card__footer">
+                                <span class="card__edad">+16 años</span>
+                                <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Ver actividad: Taller de fotografía documental">
+                                    Ver actividad
+                                </a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card card--actividad" aria-labelledby="actividad3-titulo">
+                        <figure class="card__imagen">
+                            <img src="imagenes/charlasobrepatrimonioindustrialenmuseo.jpg" alt="Charla sobre patrimonio industrial en museo" loading="lazy">
+                            <figcaption class="sr-only">Charla sobre patrimonio industrial</figcaption>
+                            <span class="card__categoria card__categoria--charla">Charla</span>
+                            <button class="card__favorito" aria-label="Guardar en favoritos">
+                                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <ul class="card__tags">
+                                <li class="card__tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> MHN</li>
+                                <li class="card__tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Colonia</li>
+                            </ul>
+                            <h3 id="actividad3-titulo" class="card__titulo">Patrimonio industrial: memoria y futuro</h3>
+                            <p class="card__fecha">
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                                22 Julio 2026 · 18:00
+                            </p>
+                            <p class="card__descripcion">Charla abierta sobre la importancia del patrimonio industrial en la identidad cultural uruguaya.</p>
+                            <footer class="card__footer">
+                                <span class="card__edad">Todo público</span>
+                                <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Ver actividad: Patrimonio industrial: memoria y futuro">
+                                    Ver actividad
+                                </a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="proximas contenedor" aria-labelledby="proximas-titulo">
+            <header class="seccion-header">
+                <div class="seccion-header__texto">
+                    <span class="seccion-header__etiqueta">Agenda Cultural</span>
+                    <h2 id="proximas-titulo" class="seccion-header__titulo">Próximas actividades</h2>
+                    <p class="seccion-header__descripcion">Lo que viene esta semana y la próxima. Planificá tu agenda cultural.</p>
+                </div>
+                <a href="agenda.html" class="seccion-header__link">
+                    Ver agenda completa
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </header>
+            <ul class="proximas__lista">
+                <li class="actividad-mini">
+                    <div class="actividad-mini__fecha">
+                        <span class="actividad-mini__dia">15</span>
+                        <span class="actividad-mini__mes">JUL</span>
+                    </div>
+                    <div class="actividad-mini__info">
+                        <h3 class="actividad-mini__titulo">Exposición Sudamtex</h3>
+                        <p class="actividad-mini__institucion">Museo Nacional de Artes Visuales</p>
+                        <p class="actividad-mini__detalle">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i> 10:00 - 18:00
+                            <span class="actividad-mini__separador" aria-hidden="true">·</span>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo
+                        </p>
+                    </div>
+                    <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Más información sobre Exposición Sudamtex">+ Info</a>
+                </li>
+
+                <li class="actividad-mini">
+                    <div class="actividad-mini__fecha">
+                        <span class="actividad-mini__dia">18</span>
+                        <span class="actividad-mini__mes">JUL</span>
+                    </div>
+                    <div class="actividad-mini__info">
+                        <h3 class="actividad-mini__titulo">Taller de Museología</h3>
+                        <p class="actividad-mini__institucion">Museo Histórico Nacional</p>
+                        <p class="actividad-mini__detalle">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i> 14:00 - 17:00
+                            <span class="actividad-mini__separador" aria-hidden="true">·</span>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo
+                        </p>
+                    </div>
+                    <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Más información sobre Taller de Museología">+ Info</a>
+                </li>
+
+                <li class="actividad-mini">
+                    <div class="actividad-mini__fecha">
+                        <span class="actividad-mini__dia">22</span>
+                        <span class="actividad-mini__mes">JUL</span>
+                    </div>
+                    <div class="actividad-mini__info">
+                        <h3 class="actividad-mini__titulo">Charla Patrimonio Industrial</h3>
+                        <p class="actividad-mini__institucion">Museo de la Revolución Industrial</p>
+                        <p class="actividad-mini__detalle">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i> 18:00
+                            <span class="actividad-mini__separador" aria-hidden="true">·</span>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Colonia
+                        </p>
+                    </div>
+                    <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Más información sobre Charla Patrimonio Industrial">+ Info</a>
+                </li>
+
+                <li class="actividad-mini">
+                    <div class="actividad-mini__fecha">
+                        <span class="actividad-mini__dia">30</span>
+                        <span class="actividad-mini__mes">JUL</span>
+                    </div>
+                    <div class="actividad-mini__info">
+                        <h3 class="actividad-mini__titulo">Exploradores del museo</h3>
+                        <p class="actividad-mini__institucion">Museo de Historia Natural</p>
+                        <p class="actividad-mini__detalle">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i> 10:00
+                            <span class="actividad-mini__separador" aria-hidden="true">·</span>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Montevideo
+                            <span class="actividad-mini__separador" aria-hidden="true">·</span>
+                            <i class="fa-solid fa-child" aria-hidden="true"></i> 6 a 12 años
+                        </p>
+                    </div>
+                    <a href="actividad.html" class="btn btn--outline btn--sm" aria-label="Más información sobre Exploradores del museo">+ Info</a>
+                </li>
+            </ul>
+        </section>
+        <section class="instituciones-destacadas contenedor" aria-labelledby="instituciones-titulo">
+            <header class="seccion-header">
+                <div class="seccion-header__texto">
+                    <span class="seccion-header__etiqueta">Espacios culturales</span>
+                    <h2 id="instituciones-titulo" class="seccion-header__titulo">Instituciones destacadas</h2>
+                    <p class="seccion-header__descripcion">Museos, archivos, bibliotecas y centros culturales que forman parte de Nodo Cultural.</p>
+                </div>
+                <a href="museos.html" class="seccion-header__link">
+                    Ver todas las instituciones
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </header>
+
+            <ul class="cards-grid cards-grid--4">
+                <li>
+                    <article class="card card--institucion" aria-labelledby="inst1-titulo">
+                        <figure class="card__imagen">
+                            <img src="assets/imagenes/institucion1.jpg" alt="Fachada del Museo Nacional de Artes Visuales" loading="lazy">
+                            <figcaption class="sr-only">Museo Nacional de Artes Visuales</figcaption>
+                            <span class="card__tipo-institucion">Museo</span>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <h3 id="inst1-titulo" class="card__titulo">Museo Nacional de Artes Visuales</h3>
+                            <p class="card__ubicacion">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                                Parque Rodó, Montevideo
+                            </p>
+                            <p class="card__descripcion">Principal museo de artes visuales del país con una colección de más de 7000 obras.</p>
+                            <a href="museo.html" class="btn btn--outline btn--sm btn--full" aria-label="Conocer más sobre el Museo Nacional de Artes Visuales">Conocer más</a>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="card card--institucion" aria-labelledby="inst2-titulo">
+                        <figure class="card__imagen">
+                            <img src="assets/imagenes/institucion2.jpg" alt="Interior del Centro de Fotografía de Montevideo" loading="lazy">
+                            <figcaption class="sr-only">Centro de Fotografía</figcaption>
+                            <span class="card__tipo-institucion card__tipo-institucion--archivo">Archivo</span>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <h3 id="inst2-titulo" class="card__titulo">Centro de Fotografía</h3>
+                            <p class="card__ubicacion">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                                Ciudad Vieja, Montevideo
+                            </p>
+                            <p class="card__descripcion">Archivo fotográfico nacional con más de 200.000 imágenes históricas y contemporáneas.</p>
+                            <a href="museo.html" class="btn btn--outline btn--sm btn--full" aria-label="Conocer más sobre el Centro de Fotografía">Conocer más</a>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="card card--institucion" aria-labelledby="inst3-titulo">
+                        <figure class="card__imagen">
+                            <img src="assets/imagenes/institucion3.jpg" alt="Biblioteca Nacional de Uruguay" loading="lazy">
+                            <figcaption class="sr-only">Biblioteca Nacional</figcaption>
+                            <span class="card__tipo-institucion card__tipo-institucion--biblioteca">Biblioteca</span>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <h3 id="inst3-titulo" class="card__titulo">Biblioteca Nacional</h3>
+                            <p class="card__ubicacion">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                                Centro, Montevideo
+                            </p>
+                            <p class="card__descripcion">Custodia del patrimonio bibliográfico nacional con salas de lectura y exposiciones temporales.</p>
+                            <a href="museo.html" class="btn btn--outline btn--sm btn--full" aria-label="Conocer más sobre la Biblioteca Nacional">Conocer más</a>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="card card--institucion" aria-labelledby="inst4-titulo">
+                        <figure class="card__imagen">
+                            <img src="assets/imagenes/institucion4.jpg" alt="Centro Cultural de Colonia del Sacramento" loading="lazy">
+                            <figcaption class="sr-only">Centro Cultural Colonia</figcaption>
+                            <span class="card__tipo-institucion card__tipo-institucion--centro">Centro Cultural</span>
+                        </figure>
+                        <div class="card__cuerpo">
+                            <h3 id="inst4-titulo" class="card__titulo">Centro Cultural Colonia</h3>
+                            <p class="card__ubicacion">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i> 
+                                Colonia del Sacramento
+                            </p>
+                            <p class="card__descripcion">Espacio multidisciplinario con talleres, exposiciones y actividades para toda la comunidad.</p>
+                            <a href="museo.html" class="btn btn--outline btn--sm btn--full" aria-label="Conocer más sobre el Centro Cultural Colonia">Conocer más</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section class="cursos-home" aria-labelledby="cursos-titulo">
+            <div class="cursos-home__contenido contenedor">
+                <header class="seccion-header">
+                    <div class="seccion-header__texto">
+                        <span class="seccion-header__etiqueta">Aprendé y creá</span>
+                        <h2 id="cursos-titulo" class="seccion-header__titulo">Cursos y talleres</h2>
+                        <p class="seccion-header__descripcion">Formación cultural con expertos. Talleres prácticos, cursos teóricos y experiencias inmersivas.</p>
+                    </div>
+                    <a href="cursos.html" class="seccion-header__link">
+                        Ver todos los cursos
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </header>
+
+                <ul class="cards-grid cards-grid--3">
+                    <li>
+                        <article class="card card--curso" aria-labelledby="curso1-titulo">
+                            <figure class="card__imagen">
+                                <img src="assets/imagenes/curso1.jpg" alt="Persona restaurando una obra de arte" loading="lazy">
+                                <figcaption class="sr-only">Conservación y restauración de obras</figcaption>
+                                <span class="card__modalidad">Presencial</span>
+                            </figure>
+                            <div class="card__cuerpo">
+                                <span class="card__institucion-curso">Museo Nacional de Artes Visuales</span>
+                                <h3 id="curso1-titulo" class="card__titulo">Conservación y restauración de obras</h3>
+                                <p class="card__fecha">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                                    Inicia 5 de agosto · 8 clases
+                                </p>
+                                <footer class="card__footer">
+                                    <span class="card__cupos">
+                                        <i class="fa-solid fa-users" aria-hidden="true"></i> 
+                                        12 cupos disponibles
+                                    </span>
+                                    <span class="card__precio">Gratuito</span>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="card card--curso" aria-labelledby="curso2-titulo">
+                            <figure class="card__imagen">
+                                <img src="assets/imagenes/curso2.jpg" alt="Taller de cerámica con estudiantes" loading="lazy">
+                                <figcaption class="sr-only">Taller de cerámica precolombina</figcaption>
+                                <span class="card__modalidad card__modalidad--virtual">Virtual</span>
+                            </figure>
+                            <div class="card__cuerpo">
+                                <span class="card__institucion-curso">Centro Cultural Colonia</span>
+                                <h3 id="curso2-titulo" class="card__titulo">Cerámica precolombina: historia y técnica</h3>
+                                <p class="card__fecha">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                                    Inicia 12 de agosto · 6 clases
+                                </p>
+                                <footer class="card__footer">
+                                    <span class="card__cupos">
+                                        <i class="fa-solid fa-users" aria-hidden="true"></i> 
+                                        20 cupos disponibles
+                                    </span>
+                                    <span class="card__precio">$1.200</span>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="card card--curso" aria-labelledby="curso3-titulo">
+                            <figure class="card__imagen">
+                                <img src="assets/imagenes/curso3.jpg" alt="Charla sobre gestión cultural" loading="lazy">
+                                <figcaption class="sr-only">Gestión cultural y patrimonio</figcaption>
+                                <span class="card__modalidad">Presencial</span>
+                            </figure>
+                            <div class="card__cuerpo">
+                                <span class="card__institucion-curso">Museo Histórico Nacional</span>
+                                <h3 id="curso3-titulo" class="card__titulo">Gestión cultural y patrimonio</h3>
+                                <p class="card__fecha">
+                                    <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                                    Inicia 20 de agosto · 4 clases
+                                </p>
+                                <footer class="card__footer">
+                                    <span class="card__cupos">
+                                        <i class="fa-solid fa-users" aria-hidden="true"></i> 
+                                        25 cupos disponibles
+                                    </span>
+                                    <span class="card__precio">Gratuito</span>
+                                </footer>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="recursos-home contenedor" aria-labelledby="recursos-titulo">
+            <header class="seccion-header">
+                <div class="seccion-header__texto">
+                    <span class="seccion-header__etiqueta">Material descargable</span>
+                    <h2 id="recursos-titulo" class="seccion-header__titulo">Recursos educativos</h2>
+                    <p class="seccion-header__descripcion">PDFs, videos, audioguías y secuencias didácticas para docentes, estudiantes y público general.</p>
+                </div>
+                <a href="recursos.html" class="seccion-header__link">
+                    Ver todos los recursos
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </header>
+
+            <ul class="recursos-home__grid">
+                <li>
+                    <a href="recursos.html" class="recurso-card">
+                        <div class="recurso-card__icono">
+                            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        </div>
+                        <div class="recurso-card__info">
+                            <h3 class="recurso-card__titulo">Guía didáctica: Arte uruguayo</h3>
+                            <p class="recurso-card__institucion">Museo Nacional de Artes Visuales</p>
+                            <span class="recurso-card__tipo">PDF descargable</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="recursos.html" class="recurso-card">
+                        <div class="recurso-card__icono recurso-card__icono--video">
+                            <i class="fa-solid fa-video" aria-hidden="true"></i>
+                        </div>
+                        <div class="recurso-card__info">
+                            <h3 class="recurso-card__titulo">Recorrido virtual: Patrimonio industrial</h3>
+                            <p class="recurso-card__institucion">Museo de la Revolución Industrial</p>
+                            <span class="recurso-card__tipo">Video</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="recursos.html" class="recurso-card">
+                        <div class="recurso-card__icono recurso-card__icono--audio">
+                            <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+                        </div>
+                        <div class="recurso-card__info">
+                            <h3 class="recurso-card__titulo">Audioguía: Museo Histórico Nacional</h3>
+                            <p class="recurso-card__institucion">Museo Histórico Nacional</p>
+                            <span class="recurso-card__tipo">Audioguía</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="recursos.html" class="recurso-card">
+                        <div class="recurso-card__icono recurso-card__icono--didactica">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        </div>
+                        <div class="recurso-card__info">
+                            <h3 class="recurso-card__titulo">Secuencia didáctica: Fotografía documental</h3>
+                            <p class="recurso-card__institucion">Centro de Fotografía</p>
+                            <span class="recurso-card__tipo">Secuencia didáctica</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="seccion-docentes" aria-labelledby="docentes-titulo">
+            <div class="seccion-docentes__contenido contenedor">
+                <div class="seccion-docentes__texto">
+                    <span class="seccion-docentes__etiqueta">Para docentes</span>
+                    <h2 id="docentes-titulo" class="seccion-docentes__titulo">Recursos para el aula</h2>
+                    <p class="seccion-docentes__descripcion">
+                        Encontrá propuestas didácticas, visitas guiadas, talleres y recursos educativos 
+                        para planificar salidas culturales con tus estudiantes.
+                    </p>
+                    <p class="seccion-docentes__descripcion">
+                        Nodo Cultural nació para fortalecer el vínculo entre museos, patrimonio y educación. 
+                        Como docente, podés encontrar actividades adaptadas a tu nivel educativo y planificar 
+                        visitas con nuestro Asistente Cultural.
+                    </p>
+                    <div class="seccion-docentes__acciones">
+                        <a href="instituciones-educativas.html" class="btn btn--primario">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i> 
+                            Recursos para docentes
+                        </a>
+                        <a href="instituciones-educativas.html#planificar" class="btn btn--secundario">
+                            <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> 
+                            Planificá tu visita
+                        </a>
+                    </div>
+                </div>
+                <figure class="seccion-docentes__imagen">
+                    <img src="assets/imagenes/docentes-museo.jpg" alt="Docentes con estudiantes en un museo" width="500" height="350" loading="lazy">
+                    <figcaption>Visita educativa a un museo con docentes y estudiantes</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="boletin" aria-labelledby="boletin-titulo">
+            <div class="boletin__contenido contenedor">
+                <div class="boletin__texto">
+                    <span class="boletin__icono" aria-hidden="true">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </span>
+                    <h2 id="boletin-titulo" class="boletin__titulo">Boletín Cultural</h2>
+                    <p class="boletin__descripcion">
+                        Recibí cada semana la agenda cultural personalizada con las actividades, 
+                        exposiciones y talleres que más te interesan, directo en tu correo.
+                    </p>
+                    <form class="boletin__form" aria-label="Formulario de suscripción al boletín">
+                        <fieldset>
+                            <legend class="sr-only">Suscribirse al boletín cultural</legend>
+                            <div class="boletin__input-group">
+                                <input 
+                                    type="email" 
+                                    placeholder="Tu correo electrónico" 
+                                    aria-label="Correo electrónico para suscribirse al boletín" 
+                                    required
+                                    class="boletin__input"
+                                >
+                                <button type="submit" class="btn btn--primario boletin__boton">
+                                    Suscribirme
+                                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <p class="boletin__nota">
+                        <i class="fa-solid fa-lock" aria-hidden="true"></i> 
+                        Sin spam. Solo contenido cultural relevante. Podés darte de baja cuando quieras.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <aside class="asistente contenedor" aria-labelledby="asistente-titulo">
+            <div class="asistente__contenido">
+                <header class="asistente__encabezado">
+                    <span class="asistente__icono" aria-hidden="true">
+                        <i class="fa-solid fa-robot"></i>
+                    </span>
+                    <h2 id="asistente-titulo" class="asistente__titulo">Asistente Cultural</h2>
+                    <p class="asistente__descripcion">
+                        Consultale al asistente sobre actividades, museos, recursos educativos o planificación de visitas. 
+                        Cuanto más específica sea tu pregunta, mejores recomendaciones recibirás.
+                    </p>
+                </header>
+                <div class="asistente__sugerencias" role="group" aria-label="Sugerencias de consultas">
+                    <span>Probá preguntarle:</span>
+                    <ul>
+                        <li>
+                            <button class="asistente__sugerencia" data-consulta="Quiero visitar un museo con niños este fin de semana">
+                                "Quiero visitar un museo con niños este fin de semana"
+                            </button>
+                        </li>
+                        <li>
+                            <button class="asistente__sugerencia" data-consulta="Estoy preparando una clase sobre patrimonio industrial. ¿Qué recursos tienen?">
+                                "Estoy preparando una clase sobre patrimonio industrial"
+                            </button>
+                        </li>
+                        <li>
+                            <button class="asistente__sugerencia" data-consulta="¿Qué actividades hay este fin de semana en Colonia?">
+                                "¿Qué actividades hay este fin de semana en Colonia?"
+                            </button>
+                        </li>
+                        <li>
+                            <button class="asistente__sugerencia" data-consulta="Recomendame una exposición de arte contemporáneo en Montevideo">
+                                "Recomendame una exposición de arte contemporáneo"
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="asistente__chat" role="application" aria-label="Chat con el Asistente Cultural">
+                    <div class="asistente__mensajes" aria-live="polite" aria-label="Conversación con el Asistente Cultural">
+                        <div class="asistente__mensaje asistente__mensaje--bot">
+                            <div class="asistente__avatar" aria-hidden="true">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <div class="asistente__burbuja">
+                                <p>¡Hola! Soy el Asistente Cultural de Nodo Cultural. Puedo recomendarte actividades, museos, recursos educativos y ayudarte a planificar visitas. ¿En qué puedo ayudarte hoy?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="asistente__input-area" aria-label="Formulario de consulta al asistente">
+                        <fieldset>
+                            <legend class="sr-only">Enviar consulta al asistente</legend>
+                            <input 
+                                type="text" 
+                                placeholder="Escribí tu consulta cultural..." 
+                                aria-label="Escribí tu consulta al Asistente Cultural"
+                                class="asistente__input"
+                            >
+                            <button type="submit" class="btn btn--primario asistente__enviar" aria-label="Enviar consulta">
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="footer__contenido contenedor">
+            <div class="footer__columna footer__columna--principal">
+                <img src="assets/imagenes/logo-nodo-cultural-blanco.png" alt="Nodo Cultural" width="160" height="45" loading="lazy">
+                <p class="footer__descripcion">
+                    Plataforma nacional de difusión cultural que centraliza y difunde la oferta cultural 
+                    de museos e instituciones patrimoniales de Uruguay.
+                </p>
+                <ul class="footer__redes" aria-label="Redes sociales de Nodo Cultural">
+                    <li><a href="#" aria-label="Instagram de Nodo Cultural"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="Twitter de Nodo Cultural"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="Facebook de Nodo Cultural"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#" aria-label="YouTube de Nodo Cultural"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <nav class="footer__columna" aria-label="Explorar">
+                <h3 class="footer__titulo-columna">Explorar</h3>
+                <ul class="footer__links">
+                    <li><a href="catalogo.html">Actividades</a></li>
+                    <li><a href="agenda.html">Agenda Cultural</a></li>
+                    <li><a href="museos.html">Instituciones</a></li>
+                    <li><a href="cursos.html">Cursos y talleres</a></li>
+                    <li><a href="recursos.html">Recursos educativos</a></li>
+                    <li><a href="boletin.html">Boletín Cultural</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__columna" aria-label="Para docentes">
+                <h3 class="footer__titulo-columna">Para docentes</h3>
+                <ul class="footer__links">
+                    <li><a href="instituciones-educativas.html">Recursos para el aula</a></li>
+                    <li><a href="instituciones-educativas.html#planificar">Planificá tu visita</a></li>
+                    <li><a href="recursos.html?tipo=secuencia">Secuencias didácticas</a></li>
+                    <li><a href="recursos.html?tipo=audioguia">Audioguías</a></li>
+                    <li><a href="recursos.html?tipo=video">Videos educativos</a></li>
+                </ul>
+            </nav>
+            <div class="footer__columna">
+                <h3 class="footer__titulo-columna">Contacto</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="contacto.html">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i> 
+                            Formulario de contacto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@nodocultural.uy">
+                            <i class="fa-regular fa-at" aria-hidden="true"></i> 
+                            info@nodocultural.uy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admin/dashboard.html">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i> 
+                            Acceso administrador
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__legal">
+            <div class="footer__legal-contenido contenedor">
+                <p>&copy; 2026 Nodo Cultural. Todos los derechos reservados.</p>
+                <ul class="footer__legal-links">
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
